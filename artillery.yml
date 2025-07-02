@@ -1,5 +1,5 @@
 config:
-  target: "https://YOUR_ACTIVE_DEPLOYMENT_URI"
+  target: "https://orpbkgow4liex47amxjz5gcqt40ynkgv.lambda-url.eu-west-3.on.aws/"
   phases:
     - duration: 600
     - arrivalRate: 100

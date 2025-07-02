@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class HelloService {
 
   public String apply() {
-    File file = new File("random.txt");
+    File file = new File("/tmp/random.txt");
 
     if (file.exists()) {
       try {
@@ -29,7 +29,7 @@ public class HelloService {
       Files.writeString(file.toPath(), value);
       return value;
     } catch (IOException e) {
-      return "Error writing file: " + e.getMessage();
+      return "Error writing file: " + value;
     }
   }
 }
